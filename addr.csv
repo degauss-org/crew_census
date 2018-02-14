@@ -1,0 +1,4 @@
+"address","street","zip","city","state","lat","lon","fips_county","score","prenum","number","precision","id"
+"1600 Pennsylvania Av, Washington DC 20500","Pennsylvania Ave NW","20502","Washington","DC",38.898761,-77.035117,"11001",0.841,"","1600","range","X2"
+"2600 Clifton Ave, Cincinnati, OH 45220","Clifton Ave","45220","Cincinnati","OH",39.12968,-84.520648,"39061",1,"","2600","range","X3"
+"3333 Burnet Avenue, Cincinnati OH 45229","Burnet Ave","45229","Cincinnati","OH",39.14089,-84.500402,"39061",1,"","3333","range","X1"
