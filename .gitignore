@@ -1,6 +1,6 @@
-CREW_Census_Tract_Variables_Data_Dictionary_v2.xlsx
-CREW_Tract_1980.csv
-CREW_Tract_1990.csv
-CREW_Tract_2000.csv
-CREW_Tract_2010.csv
-degauss_cache
+*.xlsx
+*.csv
+*.zip
+tract_shps
+crew_tract_data
+*.rds
