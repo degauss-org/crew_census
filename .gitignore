@@ -5,3 +5,11 @@ tract_shps
 crew_tract_data
 *.rds
 README.html
+*.dbf
+*.prj
+*.sbn
+/*.sbx
+*.sbx
+*.shp
+*.xml
+*.shx
