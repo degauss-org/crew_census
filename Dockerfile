@@ -24,13 +24,15 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 # set default CRAN repo and DL method
 RUN echo 'options(repos=c(CRAN = "https://cran.rstudio.com/"), download.file.method="libcurl")' >> /etc/R/Rprofile.site
 
+RUN R -e "install.packages(c('argparser', 'tidyverse', 'sf', 'stringr'))"
+
 # install devel version of automagic package to install package dependencies
-RUN R -e "install.packages('remotes'); remotes::install_github('cole-brokamp/automagic')"
+# RUN R -e "install.packages('remotes'); remotes::install_github('cole-brokamp/automagic')"
 
 RUN mkdir /app_source
 
-COPY deps.yaml /app_source/deps.yaml
-RUN R -e "setwd('/app_source'); automagic::automagic()"
+# COPY deps.yaml /app_source/deps.yaml
+# RUN R -e "setwd('/app_source'); automagic::automagic()"
 
 COPY . /app_source
 
