@@ -1,10 +1,6 @@
 library(tidyverse)
 library(sf)
 
-## import shps and merge in data for each year
-# crew_tract_data.zip from https://colebrokamp-dropbox.s3.amazonaws.com/crew_tract_data.zip
-# tract_shps.zip from https://colebrokamp-dropbox.s3.amazonaws.com/nhgis_crew_tract_shps.zip
-
 # d_1980 <- read_csv('crew_tract_data/CREW_Tract_1980.csv')
 d_1990 <- read_csv('crew_tract_data/CREW_Tract_1990.csv')
 d_2000 <- read.csv('crew_tract_data/crew_tract_2000.csv', stringsAsFactors = FALSE) %>%

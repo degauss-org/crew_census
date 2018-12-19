@@ -9,15 +9,13 @@
 |-------------|---------|-----------------------------------------------------------|
 | 0.1         | 2/24/18 | initial release                                           |
 | 0.2         | 9/26/18 | update for inflation fixes and new ARiC deprivation index |
+| 0.3         | 12/19/18| fix errors in ARiC data calculations                      |
 
-## Private Images
+## Pulling the Image
 
-The container is distributed privately and to gain access, you will need to:
+The container is no longer distributed privately, pull with:
 
-1. Create an account at [quay.io](https://quay.io)
-2. Email your quay.io username to cole dot brokamp at cchmc dot org to be added to access list
-3. Login at the Docker command line (`docker login quay.io`); you will be prompted for your username and password
-4. Pull the image with `docker pull quay.io/degauss/crew_census:0.2`
+`docker pull quay.io/degauss/crew_census:0.3`
 
 ## Using
 
@@ -28,7 +26,7 @@ DeGAUSS arguments specific to this container:
 
 Example call:
 
-`docker run --rm=TRUE -v $PWD:/tmp quay.io/degauss/crew_census:0.2 geocoded_csv_file.csv 2000`
+`docker run --rm=TRUE -v $PWD:/tmp quay.io/degauss/crew_census:0.3 geocoded_csv_file.csv 2000`
 
 In the above example call, replace `geocoded_csv_file.csv` with the name of your geocoded csv file and `2000` with the decentennial census year to be used for the tract overlay and merging of census data.
 
