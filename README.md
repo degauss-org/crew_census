@@ -1,6 +1,5 @@
 # `crew_census`
 
-[![Docker Repository on Quay](https://quay.io/repository/degauss/crew_census/status?token=7eaa4f26-4a6c-498f-86d9-dd0e68be5fc4 "Docker Repository on Quay")](https://quay.io/repository/degauss/crew_census)
 > Historical census tracts and data DeGAUSS container built for CREW.
 
 ## Versions
@@ -11,12 +10,6 @@
 | 0.2         | 9/26/18 | update for inflation fixes and new ARiC deprivation index |
 | 0.3         | 12/19/18| fix errors in ARiC data calculations                      |
 
-## Pulling the Image
-
-The container is no longer distributed privately, pull with:
-
-`docker pull quay.io/degauss/crew_census:0.3`
-
 ## Using
 
 DeGAUSS arguments specific to this container:
@@ -26,7 +19,7 @@ DeGAUSS arguments specific to this container:
 
 Example call:
 
-`docker run --rm=TRUE -v $PWD:/tmp quay.io/degauss/crew_census:0.3 geocoded_csv_file.csv 2000`
+`docker run --rm=TRUE -v $PWD:/tmp degauss/crew_census:0.3 geocoded_csv_file.csv 2000`
 
 In the above example call, replace `geocoded_csv_file.csv` with the name of your geocoded csv file and `2000` with the decentennial census year to be used for the tract overlay and merging of census data.
 
