@@ -1,5 +1,8 @@
 # `crew_census`
 
+🛑 **_archived_** 🛑
+
+
 > Historical census tracts and data DeGAUSS container built for CREW.
 
 ## Versions
